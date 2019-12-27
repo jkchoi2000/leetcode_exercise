@@ -1,9 +1,4 @@
-import mine.jkchoi.leetcode.NthNodeRemover;
-import mine.jkchoi.leetcode.PhoneNumberLetterCombination;
-import mine.jkchoi.leetcode.ThreeSum;
-
-import java.util.Arrays;
-import java.util.List;
+import mine.jkchoi.leetcode.KGroupNodesReverser;
 
 public class Main {
 
@@ -50,20 +45,32 @@ public class Main {
 //        System.out.println(Arrays.toString(combination.letterCombinations("234").toArray()));
 
         //19. Remove Nth Node From End of List
-        NthNodeRemover remover = new NthNodeRemover();
+//        NthNodeRemover remover = new NthNodeRemover();
+//
+//        NthNodeRemover.ListNode head = new NthNodeRemover.ListNode(1);
+//        NthNodeRemover.ListNode curNode = head;
+//        for(int i = 2; i < 6; i++) {
+//            NthNodeRemover.ListNode addingNode = new NthNodeRemover.ListNode(i);
+//            curNode.next = addingNode;
+//
+//            curNode = addingNode;
+//        }
+//
+//        remover.removeNthFromEnd(head, 2);
 
-        NthNodeRemover.ListNode head = new NthNodeRemover.ListNode(1);
-        NthNodeRemover.ListNode curNode = head;
-        for(int i = 2; i < 6; i++) {
-            NthNodeRemover.ListNode addingNode = new NthNodeRemover.ListNode(i);
+        //
+        KGroupNodesReverser reverser = new KGroupNodesReverser();
+        KGroupNodesReverser.ListNode head = new KGroupNodesReverser.ListNode(1);
+        KGroupNodesReverser.ListNode curNode = head;
+        for (int i = 2; i < 6; i++) {
+            KGroupNodesReverser.ListNode addingNode = new KGroupNodesReverser.ListNode(i);
             curNode.next = addingNode;
 
             curNode = addingNode;
         }
 
-        remover.removeNthFromEnd(head, 2);
+        reverser.reverseKGroup(head, 2);
     }
-
 
 
 }
